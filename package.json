@@ -1,0 +1,63 @@
+{
+  "name": "react-library-kit",
+  "version": "0.0.0",
+  "description": "React component library boilerplate, a project template for authoring and publishing React component libraries built with ES6+, Babel.",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chetanism/react-library-kit.git"
+  },
+  "keywords": [
+    "react",
+    "boilerplate",
+    "project-template",
+    "react-library"
+  ],
+  "author": "chetanism",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chetanism/react-library-kit/issues"
+  },
+  "homepage": "https://github.com/chetanism/react-library-kit#readme",
+  "peerDependencies": {
+    "react": "0.14.x",
+    "react-dom": "0.14.x"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.4.5",
+    "babel-jest": "^6.0.1",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-transform-runtime": "^6.4.3",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "chai": "^3.5.0",
+    "del": "^2.2.0",
+    "fs": "0.0.2",
+    "jest": "^0.1.40",
+    "jest-cli": "^0.8.2",
+    "mkdirp": "^0.5.1",
+    "mocha": "^2.4.5",
+    "path": "^0.12.7",
+    "react-addons-test-utils": "^0.14.x",
+    "webpack": "^1.12.12"
+  },
+  "babel" : {
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  },
+
+  "scripts": {
+    "test": "jest --verbose",
+    "build": "babel-node tools/build.js",
+    "build2": "babel src -d lib",
+    "tt": "babel '() => {}'"
+  }
+}
